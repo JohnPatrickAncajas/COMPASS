@@ -61,17 +61,28 @@ header {
     background-image: url("/assets/COMPASS Banner.webp");
     background-size: cover;
     background-position: center;
+    transition: all 0.3s;
 }
+
+header:hover {
+    filter: hue-rotate(90deg);
+    transition: filter 0.3s;
+}  
 
 main {
     padding-top: 2rem;
     margin: 0 15%;
 }
 
-img[src="/assets/About us.webp"] {
+main img {
     width: 70vw;
     height: auto;
     border-radius: 1em;
+    transition: transform 0.5s;
+}
+
+main img:hover {
+    transform: rotateY(180deg);
 }
 
 #visionAndMission {
@@ -90,6 +101,7 @@ img[src="/assets/Mission and Vision.webp"] {
 }
 
 footer {
+    font-size: 80%;
     color: #F7F7F7;
     width: 100%;
     height: auto;
@@ -128,6 +140,13 @@ footer h3{
     }
     main {
         padding-top: 1em;
+    }
+    #visionAndMission {
+        flex-direction: column;
+        gap: 0;
+    }
+    img[src="/assets/Mission and Vision.webp"] {
+        margin-bottom: 1em;
     }
 }
 
