@@ -78,11 +78,6 @@ main img {
     width: 70vw;
     height: auto;
     border-radius: 1em;
-    transition: transform 0.5s;
-}
-
-main img:hover {
-    transform: rotateY(180deg);
 }
 
 #visionAndMission {
@@ -94,7 +89,7 @@ main img:hover {
     flex:1
 }
 
-img[src="/assets/Mission and Vision.webp"] {
+#missionVisionImage {
     width: 70vw;
     height: auto;
     border-radius: 1em;
@@ -128,7 +123,7 @@ footer h3{
     h1, h2 {
         margin: 0.5em 0;
     }
-    img[src="/assets/About us.webp"] {
+    #aboutImage {
         margin-bottom: 2em;
     }
     body {
@@ -145,7 +140,7 @@ footer h3{
         flex-direction: column;
         gap: 0;
     }
-    img[src="/assets/Mission and Vision.webp"] {
+    #missionVisionImage {
         margin-bottom: 1em;
     }
 }
@@ -154,7 +149,7 @@ footer h3{
     h1, h2 {
         margin: 0.25em 0;
     }
-    img[src="/assets/About us.webp"] {
+    #aboutImage {
         margin-bottom: 1em;
     }
     body {
