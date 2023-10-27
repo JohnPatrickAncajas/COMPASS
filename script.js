@@ -1,4 +1,21 @@
 document.addEventListener("DOMContentLoaded", function() {
+
+    const headerElement = document.getElementById("header");
+    const navElement = document.getElementById("nav");
+    const logoElement = document.getElementById("logo");
+    const scrollThreshold = headerElement.offsetHeight;
+
+    window.addEventListener("scroll", function() {
+        const scrollPosition = document.documentElement.scrollTop;
+
+        if (scrollPosition >= scrollThreshold) {
+            navElement.style.position = "fixed";
+            navElement.style.top = "0";
+            nav.classList.add("visibleNav");
+            logoElement.style.visibility = "visible";
+        }
+    });
+
     let mainImageElement = document.getElementById("aboutImage");
     let missionVisionImageElement = document.getElementById("missionVisionImage");
 

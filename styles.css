@@ -40,6 +40,10 @@ nav {
     justify-content: space-between;
 }
 
+.visibleNav {
+    background-color: #0C081C;
+}
+
 nav ul {
     list-style: none;
     display: flex;
@@ -49,7 +53,7 @@ nav ul {
     gap: 1em;
 }
 
-img[src="/assets/COMPASS Logo.ico"] {
+nav img {
     width: 3em;
     height: 3em;
     visibility: hidden;
