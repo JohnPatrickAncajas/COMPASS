@@ -27,6 +27,7 @@ body {
     padding: 0;
     display: grid;
     grid-template-columns: 1fr;
+    transition: all 0.5s;
 }
 
 nav {
@@ -40,8 +41,13 @@ nav {
     justify-content: space-between;
 }
 
+#logo {
+    padding: 0.25em;
+}
+
 .visibleNav {
     background-color: #0C081C;
+    transition: ease-out 0.2s;
 }
 
 nav ul {
