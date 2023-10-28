@@ -105,6 +105,25 @@ main img {
     border-radius: 1em;
 }
 
+#joinButton {
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    padding: 10px 20px;
+    background: linear-gradient(45deg, #0C081C, #2B295A, #0C081C);
+    color: #F7F7F7;
+    border: none;
+    border-radius: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#joinButton:hover {
+    background: linear-gradient(45deg, #FF5733, #F7F7F7, #FF5733);
+    color: #0c081c;
+}
+
+
 footer {
     font-size: 80%;
     color: #F7F7F7;
