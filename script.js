@@ -58,33 +58,30 @@ document.addEventListener('DOMContentLoaded', function() {
     const missionVisionImageElement = document.getElementById('missionVisionImage');
 
     function changeMainImage() {
-        mainImageElement.src = '/assets/About us 2.webp';
+        mainImageElement.src = 'assets/About us 2.webp';
 
         setTimeout(function() {
-            mainImageElement.src = '/assets/About us 3.webp';
-        }, 1600);
+            mainImageElement.src = 'assets/About us 3.webp';
+        }, 2500);
 
         setTimeout(function() {
-            mainImageElement.src = '/assets/About us.webp';
-        }, 3300);
+            mainImageElement.src = 'assets/About us.webp';
+        }, 5000);
     }
 
     function changeMissionVisionImage() {
-        missionVisionImageElement.src = '/assets/Mission and Vision 2.webp';
+        missionVisionImageElement.src = 'assets/Mission and Vision 2.webp';
 
         setTimeout(function() {
-            missionVisionImageElement.src = '/assets/Mission and Vision.webp';
+            missionVisionImageElement.src = 'assets/Mission and Vision.webp';
         }, 2500);
     }
 
-    function imageSwap() {
-        changeMainImage();
-        changeMissionVisionImage();
-    }
+    changeMainImage();
+    changeMissionVisionImage();
 
-    imageSwap();
-
-    setInterval(imageSwap, 5000);
+    setInterval(changeMainImage, 7500);
+    setInterval(changeMissionVisionImage, 5000);
 
     // scroll adjustment
 
@@ -105,5 +102,11 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
-    
+
+    // year on copyright
+
+    const currentYear = new Date().getFullYear();
+    const copyrightYear = document.getElementById('copyrightYear');
+
+    copyrightYear.innerText= currentYear;
 });
