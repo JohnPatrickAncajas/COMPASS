@@ -87,9 +87,17 @@ main {
 }
 
 main img {
-    width: 70vw;
+    width: 40vw;
     height: auto;
     border-radius: 1em;
+    margin: auto;
+}
+
+#aboutUs {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 1em;
 }
 
 #visionAndMission {
@@ -102,9 +110,18 @@ main img {
 }
 
 #missionVisionImage {
-    width: 70vw;
+    width: 40vw;
     height: auto;
+    display: flex;
     border-radius: 1em;
+}
+
+#goalsAndObjectives {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 1em;
+    margin: 1em 0;
+    align-items: center;
 }
 
 #joinButton {
@@ -138,6 +155,7 @@ footer {
 #links {
     display: flex;
 }
+
 footer ul {
     padding-inline-start: 0;
     list-style: none;
@@ -169,12 +187,24 @@ footer h3{
     main {
         padding-top: 1em;
     }
+    main img {
+        width: 70vw;
+    }
+    #aboutUs {
+        flex-direction: column;
+        gap: 0;
+    }
     #visionAndMission {
         flex-direction: column;
         gap: 0;
     }
     #missionVisionImage {
-        margin-bottom: 1em;
+        width: 70vw;
+        margin: 2em 0;
+    }
+    #goalsAndObjectives {
+        display: block;
+        margin-bottom: 2em;
     }
 }
 
@@ -195,6 +225,20 @@ footer h3{
     main {
         padding-top: 1.5rem;
     }
+    main img {
+        width: 70vw;
+    }
+    #aboutUs {
+        flex-direction: column;
+        gap: 0;
+    }
+    #missionVisionImage {
+        width: 70vw;
+        margin-bottom: 1em;
+    }
+    #goalsAndObjectives {
+        display: block;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -204,6 +248,21 @@ footer h3{
     }
     header {
         height: 450px;
+    }
+    main img {
+        width: 60vw;
+    }
+    #aboutUs {
+        flex-direction: column;
+        gap: 0;
+    }
+    #missionVisionImage {
+        width: 60vw;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    #goalsAndObjectives {
+        display: block;
     }
 }
 

@@ -55,7 +55,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // changing images in main
 
     const mainImageElement = document.getElementById('aboutImage');
-    const missionVisionImageElement = document.getElementById('missionVisionImage');
 
     function changeMainImage() {
         mainImageElement.src = 'assets/About us 2.webp';
@@ -69,19 +68,9 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 5000);
     }
 
-    function changeMissionVisionImage() {
-        missionVisionImageElement.src = 'assets/Mission and Vision 2.webp';
-
-        setTimeout(function() {
-            missionVisionImageElement.src = 'assets/Mission and Vision.webp';
-        }, 2500);
-    }
-
     changeMainImage();
-    changeMissionVisionImage();
 
     setInterval(changeMainImage, 7500);
-    setInterval(changeMissionVisionImage, 5000);
 
     // scroll adjustment
 
