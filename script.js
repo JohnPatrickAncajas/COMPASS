@@ -52,6 +52,24 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
+    // nav hides on scroll down and shows up on scroll up 
+
+    let prevScrollPos = window.scrollY;
+
+    window.onscroll = function() {
+
+        const currentScrollPos = window.scrollY;
+        
+        if (currentScrollPos >= scrollThreshold) {
+            if (prevScrollPos > currentScrollPos) {
+                navElement.style.top = "0";
+            } else {
+                navElement.style.top = `-${navElement.offsetHeight}px`;
+            }
+        }
+        prevScrollPos = currentScrollPos;
+    }
+
     // changing images in main
 
     const mainImageElement = document.getElementById('aboutImage');
